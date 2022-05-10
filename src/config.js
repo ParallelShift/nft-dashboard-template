@@ -1,10 +1,10 @@
 export const CONFIG = {
   TEMPLATE: {
     // 1. Set your NFT collection contract address
-    "collection_address": "0x9498274b8c82b4a3127d67839f2127f2ae9753f4",
+    "collection_address": "0xa492E89D5bCC766180f572AC8278C67A39cC8032",
 
     // 2. Set your blockchain chain ID where your NFT collection contract address is deployed (see below for value options)
-    "block_chain_id": "137",
+    "block_chain_id": "56",
 
     // 3. Set the default title of your dashboard. If found, this template uses the NFT Collection name for the title.
     "title": "My NFT Collection",
@@ -13,7 +13,7 @@ export const CONFIG = {
     "timeseries_chart": true,
 
     // 5. (Optional) Set your banner image
-    "banner_picture": "",
+    "banner_picture": "https://mint.plrtoken.com/collectionBanner.png",
   },
 
   // Supported networks - just for your reference
@@ -25,7 +25,7 @@ export const CONFIG = {
     {name: "Moonbeam", value: 1284},
     {name: "Moonriver", value: 1285},
     {name: "Arbitrum", value: 42161},
-    {name: "Shiden", value: 336}  
+    {name: "BSC", value: 56}  
     ],
   // Supported timeframes - just for your reference
   GRAPH_OPTIONS : [
