@@ -13,20 +13,13 @@ export const CONFIG = {
     "timeseries_chart": true,
 
     // 5. (Optional) Set your banner image
-    "banner_picture": "https://mint.plrtoken.com/collectionBanner.png",
+    "banner_picture": "",//https://mint.plrtoken.com/collectionBanner.png",
   },
 
   // Supported networks - just for your reference
   FILTER_OPTIONS : [
-    {name: "Ethereum", value: 1},
-    {name: "Polygon", value: 137},
-    {name: "Avalanche", value: 43114},
-    {name: "Fantom", value: 250},
-    {name: "Moonbeam", value: 1284},
-    {name: "Moonriver", value: 1285},
-    {name: "Arbitrum", value: 42161},
     {name: "BSC", value: 56}  
-    ],
+    ],//0xa492E89D5bCC766180f572AC8278C67A39cC8032
   // Supported timeframes - just for your reference
   GRAPH_OPTIONS : [
     {name: "7 Days", value: 7},

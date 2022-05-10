@@ -18,7 +18,7 @@ export default function LandingPage({light, dark, vibrant}) {
     const [chain, setChain] = useState(CONFIG.TEMPLATE.block_chain_id)
     const [market, setMarket] = useState([])
     const [activeLoader, setLoader] = useState(true)
-    const API_KEY = process.env['REACT_APP_COVALENT_API']
+    const API_KEY = "ckey_6fe0c838e7454ca8b9f0278afbf"
 
     axiosRetry(axios, {
       retries: 3, 
@@ -40,7 +40,7 @@ export default function LandingPage({light, dark, vibrant}) {
     const handleMarket = async(id) => {
       setLoader(true)
       try{
-        const resp = await axios.get(`https://api.covalenthq.com/v1/${id}/nft_market/`, {auth: {username: 'ckey_6bf60a7bf22d4a309dbe74f3c5c'}})
+        const resp = await axios.get(`https://api.covalenthq.com/v1/${id}/nft_market/`, {auth: {username: 'ckey_6fe0c838e7454ca8b9f0278afbf'}})
         console.log(resp.data.data.items)
         setMarket(resp.data.data.items)
         setLoader(false)

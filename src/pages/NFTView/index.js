@@ -37,7 +37,7 @@ export default function NFTView({light, dark, vibrant}) {
 
   // Request for nft metadata 
   const handleNft = async() => {
-    const resp = await axios.get(`https://api.covalenthq.com/v1/${chainId}/tokens/${address}/nft_metadata/${id}/?quote-currency=USD&format=JSON`, {auth: {username: 'ckey_6bf60a7bf22d4a309dbe74f3c5c'}})
+    const resp = await axios.get(`https://api.covalenthq.com/v1/${chainId}/tokens/${address}/nft_metadata/${id}/?quote-currency=USD&format=JSON`, {auth: {username: 'ckey_6fe0c838e7454ca8b9f0278afbf'}})
     setNft(resp.data.data.items[0].nft_data !== null ? resp.data.data.items[0].nft_data[0] : {external_data : {image: ""}})
     setLoader(false)
   }
